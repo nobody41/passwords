@@ -47,7 +47,7 @@ def create_user():
         """
         The first stage during registration and checking the user ID for the presence of a clone.
 
-        :return:
+        :return: new_user_id
         """
         new_user_id = input("Enter new user ID: ")
         file_checker = open("DataBase.csv", "r")  # UPGRADE...
@@ -68,7 +68,7 @@ def create_user():
         - uppercase letters.
         - lowercase letters.
 
-        :return:
+        :return: new_user_password
         """
         while True:
             new_user_password = input("Enter new password: ")
